@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script>
+    const listenIt = (ev) => {
+        const date = document.getElementById('date')
+        const token = btoa(date.value)
+        const tokenEl = document.getElementById('token')
+        tokenEl.innerText = 'token: ' + token
+    }
+</script>
+<style>
+    #token {
+        margin: 10px 0;
+    }
+</style>
+</head>
+<body>
+
+<h1>Frank Tokenizer</h1>
+<input type="date" aria-label="Hii" onchange="listenIt()" id='date'>
+<div id='token'></span>
+</body>
+</html>
