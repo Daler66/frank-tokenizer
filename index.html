@@ -6,6 +6,7 @@
     const listenIt = (ev) => {
         const date = document.getElementById('date')
         const token = btoa(date.value)
+        console.warn(date.value)
         const tokenEl = document.getElementById('token')
         tokenEl.innerText = 'token: ' + token
     }
